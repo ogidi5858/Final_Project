@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="index">
+<head>
+
+<meta charset="utf-8">
+<meta name ="keyword" content="HTML 5, CSS 3, JavaScript, JOuery, Angularjs"/>
+<meta name="description" content=" Dynamic web developrment">
+<meta name ="author" content="mildred">
+<meta name=" viewport" content ="width=device-width, initial-scale=1.0">
+<title> float layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="CSS/CSS.css">
+</head>
+
+<body> 
+    <!--topnav-->    
+    <nav class="topnav">
+        <ul>
+            <li><h2 class="h2"><img src="Images/tracylogo2.png" height="100" width="100" class="animate"> <div style="color: white; margin-top: 0px;">Cleaning Company</div></h2></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+
+            <div class="right" style="float: right; margin-right: 30px;" >
+            <li><a href="FAQS.html">FAQS</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Calculate</h1>
+        <p>Whether your cleaning services are weekly, bi-weekly, 
+            monthly or one-time special cleaning services <br/>for the holiday guests we
+             would be happy to provide you with excellent cleaning service. </p>
+    </header>
+
+    <form action="casseinformation.py" method="POST">   
+        <section class="row" style="background-color: rgb(197, 204, 206); padding: 20px; letter-spacing: 0.5px; font-size: 19px;">
+            <article class="col-12">
+                <p>What is the total square footage to be cleaned:</p>
+                <label for="numberofsquarefoot"></label>
+            <input type="number" name="squarefoot"  id="foot" required>
+
+            <p>How many bathrooms do you want cleaned?</p>
+                <label for="numberofbathrooms"></label>
+            <input type="number" name="bathrooms"  id="bathrooms"required>
+
+            <p>How many bedrooms do you want cleaned?</p>
+                <label for="numberofbedrooms"></label>
+            <input type="number" name="bedrooms"  id="bedrooms">
+
+            <p>How many living rooms do you want cleaned?</p>
+                <label for="numberoflivingrooms"></label>
+            <input type="number" name="livingrooms"  id="livingrooms" required>
+
+            <p>What type of kitchen do you have?</p>
+            <select id="kitchen" name="kitchen" size="1">
+                <option value="kitchen">choose...</option>
+                <option value="kitchen">small</option>
+                <option value="kitchen">Large</option><br/>
+            </select>
+
+            <p>Do you have a laundry room that needs cleaning?</p>
+            <select id="kitchen" name="kitchen" size="1">
+                <option value="answer">select...</option>
+                <option value="answer">Yes</option>
+                <option value="answer">No</option><br/>
+            </select>
+
+            <p>Your bathroom includes:</p>
+            <select id="kitchen" name="kitchen" size="1">
+                <option value="answer">choose...</option>
+                <option value="answer">Shower only</option>
+                <option value="answer">Tubs only</option>
+                <option value="answer">Seperate shower and tubs</option>
+                <option value="answer">None</option>
+            </select>
+            </article>
+        </section>
+
+        <section class="row" style="background-color:rgb(197, 204, 206) ; padding: 20px; letter-spacing: 0.5px; ">
+            <article class="col-12">
+                <h2>Additional services</h2>
+                <p>Check additional rooms you would like us to clean::</p>
+                <ul>
+                    <div>
+                    <li style="font-size:17px;"><input type="checkbox" name="question" value="diningroom" class="radio">
+                    <label for="diningroom">Dining room</label></li>
+
+                    <li style="font-size: 17px;"><input type="checkbox" name="question" value="laundry" class="radio">
+                    <label for="laundry">laundry</label></li>
+
+                    <li style="font-size: 17px;"><input type="checkbox" name="question" value="Hallway" class="radio">
+                    <label for="Hallway">Hallway</label></li>
+
+                    <li style="font-size: 17px;"><input type="checkbox" name="question" value="Notatall" class="radio">
+                    <label for="Notatall">Guest room</label></li>
+
+                    <li style="font-size: 17px;"><input type="checkbox" name="question" value="Garage" class="radio">
+                    <label for="Garage">Garage</label></li>
+
+                    <li style="font-size:17px;"><input type="checkbox" name="question" value="office" class="radio">
+                    <label for="office">Office</label></li>
+
+                    <li style="font-size: 17px;"><input type="checkbox" name="question" value="storerooms" class="radio">
+                    <label for="storerooms">Storerooms</label></li>
+                </div>
+                </ul>
+
+                <label for="notes">Message</label>
+                <textarea row="10 col 5" name="notes" id="notes"></textarea><br/><br/><br/><br/>
+           
+                <input type="reset" name="reset">
+                <input type="submit" name="submit">
+            </article>
+        </section>  
+    </form>
+
+    <!--Cleaning services-->
+<div class="cleaning-service-container">
+    <section class="row">
+        <article class="col-6">     
+            <div class="cleaning-service-list">
+                <div class="cleaning-p">
+            
+        </div>
+            <h1>Cleaning Services</h1>
+            <ul>
+                <li><a href="Apartment Cleaning">Apartment Cleaning</a></li>
+                <li><a href="House Cleaning">House Cleaning</a></li>
+                <li><a href="Move In / Move Out">Move In / Move Out</a></li>
+                <li><a href="Carpet Cleaning">Carpet Cleaning</a></li>
+                <li><a href="After Renovation">After Renovation</a></li>
+                <li><a href="Curtain Cleaning">Curtain Cleaning</a></li>
+                <li><a href="Window Cleaning">Window Cleaning</a></li>
+                <li><a href="Commercial Cleaning">Commercial Cleaning</a></li>
+                <li><a href="Residential Cleaning">Residential Cleaning
+                </a></li>
+            </ul>       
+        </div>
+        </article>
+        
+        <aside class="col-6">
+        <div class="contact">
+        <!--Contact information--> 
+            <h1>Contact Information</h1>
+            <p>3261 Anmoore Road Brooklyn, NY 11230</p>
+            <p>800-123-4567, Fax: 718-724-3312</p>
+            <p>officeone@youremail.com</p>
+            <p>Mon-Sat: 9:00 am – 5:00 pm</p>
+            <p><a href="Get Estimate.html">Get Estimate</a></p>
+        </div>       
+</aside>    
+    </section>
+</div>
+
+    <!--Footers--> 
+    <footer>
+        © 2022 Cleaning. Privacy Policy
+    </footer>
+    
+    
+</body>
+
+</html>

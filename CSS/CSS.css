@@ -1,0 +1,812 @@
+*{
+    box-sizing:border-box;
+}
+
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+[class*="col-"]{
+    float:left;
+    padding: 10px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+@media only screen and (min-width:600px){
+
+.col-1{
+    width:8.33%
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width:25%;
+}
+.col-4{
+    width:33.33%;
+}
+.col-5{
+    width:41.66% ;
+}
+.col-6{
+    width:50%;
+}
+.col-7{
+    width:58.33%;
+}
+.col-8{
+    width:66.66%;
+}
+.col-9{
+    width:75%;
+}
+.col-10{
+    width:83.33%;
+}
+.col-11{
+    width:91.66%;
+}
+.col-12{
+    width:100%;
+}
+}
+body{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h2{
+    color: rgb(247, 241, 241);
+    font-size: 30px;
+    margin-left: 10px;    
+}
+
+.topnav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 199px;
+    background-color:black;
+    font-size: 12px;   
+}
+
+.topnav li{
+    display: inline;
+}
+.topnav ul{
+    list-style: none;
+}
+
+.topnav a{
+    text-decoration: none;
+    margin: 50px;
+    color: white;
+    margin-right: 0px;
+    font-size: 15px;
+    transition: .1s ease;
+    padding: 3px;
+}
+
+.topnav li a:visited{
+    color:white;
+}
+.topnav li a:hover{
+    background-color:white;
+    color: black;
+    
+}
+.topnav li a:active{
+    background-color: red;
+    color:white
+}
+header{
+    background-image: linear-gradient(white,rgb(171, 171, 199),yellow);
+    position: static;
+    margin-top: 20%;
+    margin-left: -1%;
+    margin-right: -1%;
+    padding-bottom: 10px;
+    text-align: center;
+    height: 200px;
+    align-content: center;
+    
+    margin-bottom: 10%;
+}
+
+.animate{
+    cursor: pointer;
+    margin-top: -2%;
+    margin-left: -4%;
+}
+
+.head-home h1{
+    color: rgb(2, 0, 15);
+    font-size: 60px;
+}
+.head-home h3{
+    font-size: 50px;
+    margin-top: 100px;
+    color: rgb(10, 10, 0);
+}
+
+#center{
+    text-align: center;
+    margin-top: 9%;    
+    height: 600px;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat; 
+    left:0;
+    right:0;
+    position:static;
+}
+
+#get{
+    background-color: rgb(186, 205, 214);
+    color: rgb(8, 2, 2);
+    border-radius: 13px;
+    margin: 20px 0px;
+    padding: 10px ;
+    display: inline-block;
+    transition: .1s ease;  
+    width: 20%;  
+    font-weight: bold;
+}
+#get:hover{
+    background-color: rgb(17, 14, 13);
+    font-weight: bold;
+    color: white;
+}
+.service-box-box{
+    column-count: 4;
+    column-gap: 0%;
+}
+
+.service-box-container{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(white,rgb(171, 171, 199),yellow);
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 2%;
+    border-radius: 50%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;      
+    flex-wrap: wrap;
+}
+.service-box-container:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+.service-box-container h3{
+    font-size: 20px;
+   
+}
+.service-box-container ul{
+    list-style: none;  
+}
+.service-box-container li{
+    font-size: 15px;
+    margin-left: -25px;
+}
+.service-box-container a{
+    font-size: 18px;
+    color: black;
+    background-color: lightsteelblue;
+    padding-left: 7px;
+    padding-right: 7px; 
+    padding-bottom: 7px;   
+    border-radius: 15px;
+}
+.service-box-container a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+
+
+#box{
+    height: 450px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 70px;
+    transition: all 0.2s ease-in; 
+    
+    align-items: center;
+    background-color: white;
+    border-radius: 5%;
+}
+
+#box:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    background-color: azure;    
+}
+
+#box h3{
+    color: brown;
+    font-size: 22px;
+}
+
+.list{
+    list-style: none;
+    font-size: 15px;
+}
+.about-company h1{
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 2px 3px 6px rgb(111, 114, 113);
+}
+.about-company{
+    margin-top: 30%;
+}
+.provide-img{
+    margin-top: 20%;
+}
+
+.about-company h3{
+    font-size: 35px;
+    text-align: left;
+    margin-left: 0px;
+}
+.about-company p{
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.provide{
+    column-count: 2;
+    list-style: none;   
+}
+.provide li{
+    font-size: 16px;
+    text-align: left;    
+}
+.How{
+    column-count: 2;
+    padding-top: 20px;
+    column-gap: 50px;
+}
+.How h3{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 0px;
+}
+.How h5{
+    font-size: 20px;
+    text-align: left;
+    
+    margin-bottom: 0px;
+}
+.How p{
+    text-align: left;
+    font-size: 15px;
+}
+.With{
+    column-count: 2;
+}
+.With h3{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.With h4{
+    font-size: 20px;
+    text-align: left;
+}
+.With p{
+    text-align: left;
+    font-size: 15px;
+}
+.image1{
+    cursor: pointer;
+}
+
+.choose-image{
+    margin-top: 35px;
+    margin-left: -90px;
+    
+}
+.choose-container{
+    margin-left: 90px;
+}
+.choose-head h1{
+    font-size: 40px;
+    text-align: left;
+    color: rgb(10, 0, 0);
+    margin-bottom: 0px;
+}
+.choose-head span{
+    color: rgb(245, 245, 9);
+    text-shadow:black;
+
+}
+.choose-head p{
+    text-align: left;
+    font-size: 19px;
+    letter-spacing: 0.5;
+}
+
+.choose{
+    list-style: none;
+      
+}
+
+.choose h3,li{
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 0.5;
+   
+}
+.choose p{
+    text-align: left;
+    font-size: 20px;    
+}
+
+#reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+}
+.review-heading{
+    letter-spacing: 1px;
+    margin: 30px, 0px;
+    padding: 10px, 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-heading h1{
+    font-size: 30px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 10px 20px
+   
+}
+.review-heading span{
+    font-size: 12px;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.review-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px black;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.review-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.profile-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+}
+.profile strong{
+    color: rgb(65, 49, 29);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.profile span{
+    color: rgb(121, 112, 112);
+    font-size: 11px;
+}
+.clients-review{
+    color: gold;
+}
+.clients-comment{
+    font-size: 14px;
+    color: black;
+}
+
+.price-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    text-align: center;
+}
+.price-heading h1{
+    font-size: 50px;
+    font-weight: 800;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10%;
+    
+    
+}
+.price-heading p{
+    font-size: 20px;    
+    color: rgb(10, 1, 1);
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80PX;
+    padding-top: 20PX;
+    padding-bottom: 40PX;
+    text-align: center;    
+    letter-spacing: 0.5PX;
+    align-content: center;
+}
+
+
+#pricing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 10%;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 511x;
+    background-image: linear-gradient(white,rgb(171, 171, 199),yellow);
+    border-radius: 20px;
+    box-shadow: 0px 5px 14px rgb(0, 0, 0, 0.25),0, 5px 5px rgb(0, 0, 0, 0.22);
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.2s ease-in;
+}
+.card-wrapper:hover{
+    transform: scale(1.1);
+}
+.card-header{
+    margin: 1px;
+    text-align: center;
+}
+.card-wrapper:hover .card-header h2{
+    transform: scale(1.1);
+    color: blue;
+    letter-spacing: 2;
+}
+
+.card-header >img{
+    width: 150px;
+    display: block;
+}
+
+.card-detail{
+    width: 100%;
+}
+.card-detail p{
+    padding: 3px 6px;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(192, 183, 183);
+}
+.card-detail>p:hover{
+    background-color: rgb(160, 156, 156);
+}
+
+.fa-check{
+    color: blue;
+    padding-right: 10px;
+}
+.fa-times{
+    color: red;
+    padding-right: 10px;
+}
+.card-price{
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+}
+.card-price p{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.card-price >sup,sub{
+    font-size: 19px;
+}
+
+.card-button{
+    padding: 2px 5px;
+    border: 2px solid blue;
+    background-color: blue; 
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 50ms ease-in;
+}
+.card-button:hover{
+    border: 2px solid gray;
+    color: black;
+    background-color: white;
+    font-weight: 100;
+
+}
+.offer-image{
+    margin-top: 4%;
+} 
+
+.we-offer{
+    
+    padding-left:30px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 340px;
+    margin-left: -70px;
+    margin-bottom: 20%;
+    
+   
+}
+.we-offer h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(7, 0, 0);
+    text-shadow: 4px 2px 2px rgb(248, 247, 247);
+    letter-spacing: 0.5px;
+}
+.we-offer span{
+    color: yellow;
+    text-shadow: 4px 2px 2px rgb(10, 1, 1);
+    font-size: 50px;
+}
+.we-offer h3{
+    color: rgb(247, 247, 242);
+    letter-spacing: 1px;
+    background-color: black;
+}
+.we-offer p{
+    color: rgb(10, 1, 1);
+    letter-spacing: 0.5px;
+    font-size: 19px;
+}
+.calculate-now a{
+    color: rgb(8, 5, 5);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    background-color: rgb(204, 209, 211);
+    border-radius: 10px;
+}
+.calculate-now:hover a{
+    color: rgb(253, 253, 248);
+    background-color: rgb(19, 1, 1);
+    border-radius: 10px;
+}
+
+.cleaning-product{
+    margin-left: 50px;
+}
+#cleaningproduct{
+    text-align: left;
+    margin-left: 18px;
+}
+#cleaningproduct h1{ 
+    color: rgb(1, 1, 15);
+    font-size: 40px;
+}
+#cleaningproduct span{
+    color: blue;
+    font-size: 50px;
+}
+
+#cleaningproduct p{
+    font-size: 21px;
+}
+#cleaningproduct li{
+    font-size: 25px;
+}
+
+.cleaning-service-container section{
+    background-color: rgb(222, 247, 5);
+    background-image: linear-gradient(white,rgb(171, 171, 199),yellow);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.cleaning-service-list{
+    padding-left: 30px;   
+}
+.cleaning-service-list h1{
+    font-size: 30px;
+}
+.cleaning-service-list p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0%;
+}
+.cleaning-service-list ul{
+    list-style: none;
+}
+.cleaning-service-list li{
+    font-size: 22px;
+    color: white;
+}
+.cleaning-service-list a{
+    color: black;
+    transition: .1s ease; 
+}
+.cleaning-service-list a:hover {
+    background-color: rgb(7, 2, 2);
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+.contact{
+    text-align: justify;
+    padding-left: 35%;
+    font-size: 15px;
+    margin-top: 12%;
+}
+.contact li, a{
+    font-size: 15px;
+}
+footer{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+details{
+    text-transform:capitalize;
+}
+.years{
+    font-size: 18px;
+    margin-top: 10%;
+}
+.mission h1{
+    font-size: 20px;
+}
+.team-img{
+    margin-top: 10%;
+}
+.team-images{
+    column-count: 3;
+    margin-left: 70px;
+    text-align: center;
+    margin-top: 5%;
+}
+.goal li{
+    font-size: 20px;
+}
+.goal p{
+    font-size: 17px;
+}
+
+.house-cleaning{
+    column-count: 3;
+    align-items: center;
+    text-align: center;    
+}
+.house-cleaning h2{
+    font-size: 20px;
+}
+.house-clean-image{
+    margin-bottom: 10%;
+}
+.house-clean-image:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
+    border-radius: 50%;
+}
+.addittional-list h1{
+    text-align: center;
+}
+.addittional  ul,li{
+    list-style: none;
+}
+.addittional li{
+    font-size: 15px;
+}
+.counts{
+    column-count: 4;
+}
+.shop-items{
+    column-count: 3;
+}
+.shop-item-image{
+    margin-left: 120px;    
+}
+  
+.shop-item-image a,img{
+    margin-top: 40px;
+}
+.shop-item-image p{
+    text-align: center;
+    margin-right: 100px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.form{
+    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
+}
+.form-class{
+    text-align: left;
+    padding: 40px;
+}
+.form-class h4{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.details-box label{
+    font-size: 19px;
+    letter-spacing: 0.5;
+} 
+.Details{
+    margin-top: 6px;
+}
+
+.home-information h2{
+    font-size: 25px;
+}
+.home-information {
+    margin-left:35px ;    
+}
+.Requested{
+    margin-left:35px ; 
+}
+
+
+
+
+
+
+
